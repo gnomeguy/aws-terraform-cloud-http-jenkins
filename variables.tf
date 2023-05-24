@@ -1,3 +1,9 @@
+variable "AWS_ACCESS_KEY_ID" {
+  description = "My AWS access key"
+}
+variable "AWS_SECRET_ACCESS_KEY" {
+  description = "My AWS secret key"
+}
 variable "region" {
 default = "us-east-2"
 }
