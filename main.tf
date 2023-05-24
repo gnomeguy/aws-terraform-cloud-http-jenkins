@@ -1,18 +1,3 @@
-#terraform {
-#  required_providers {
-#    aws = {
-#      source  = "hashicorp/aws"
-#      version = "~> 3.28.0"
-#    }
-#  }
-#}
-# Configure the AWS Provider
-#provider "aws" {
-  region = var.region
-  shared_credentials_file = var.creds
-  profile = "default"
-}
-
 # Create a VPC
 resource "aws_vpc" "app_vpc" {
   cidr_block = var.vpc_cidr
